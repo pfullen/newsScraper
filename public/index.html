@@ -34,15 +34,88 @@
         height: 200px;
         font-size: 18px;
       }
+      .article {
+        background-color: #4286f4;
+        color: white;
+        padding: 10px;
+        border-top-radius: 5px;
+      }
+
+      .article-text {
+        border: 1px solid lightgray;
+        padding: 10px;
+      }
+      .article-button {
+        float: right;
+      }
+      .articles {
+        margin: 0 auto;
+        width: 90%;
+      }
+      .image-body {
+        width: 60%;
+        margin: 0 auto; 
+      }
+
+      #my-nav {
+         background-color: #4286f4;
+         color: white;
+         height: 50px;
+
+      }
+  .navbar-default   .navbar-nav li a  {
+        color: white;
+      }
+#my-nav a {
+  color: white;
+
+
+}
+ 
+      
     </style>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
   </head>
   <body>
-    <div id="wrapper">
-      <h1>Note Scraper</h1>
-      <h2><i>If you can do this...the homework should be no problem.</i></h2>
-      <div id="articles"></div>
-      <div id="notes"></div>
-    </div>
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-default" id="my-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Mongo Scraper</a>
+          </div>
+          <ul class="nav navbar-nav items">
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Saved Articles</a></li>
+            <li><a href="#">Scrape New Articles</a></li>
+            
+          </ul>
+        </div>
+      </nav>
+
+      <div class="image-body">
+      <img src="http://wldywjbl.co/wp-content/uploads/2014/11/news2.jpg" />
+      </div>
+
+        <div class = "articles">
+          <div class="page-header">
+            <div class = "article">
+            <h1 class ="article-title">
+              This is an article
+           <button class="btn btn-success article-button"> Save Article </button>
+            </h1>
+          </div>
+          <p class = 'article-text'>
+            Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small> 
+          </p>
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
