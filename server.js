@@ -70,13 +70,13 @@ request('http://www.reuters.com/news/archive/technologyNews?view=page', function
   $("article.story").each(function(i, element) {
    
    var result = {};
-          result.image = $(this).children('.story-photo.lazy-photo').children('a')
-          .children('img').attr('src');
+          const articleImage = $(this).children('.story-photo').children('a');
+          result.image = articleImage.children('img').attr('org-src');
          const storyContent = $(this).children('.story-content');
          result.title = storyContent.children('a').children('h3').text(); 
          result.summary = storyContent.children('p').text();
 
-
+console.log(`this is the img ${result.image}`);
     // Save these results in an object that we'll push into the results array we defined earlier
     articles.push(result)
 
