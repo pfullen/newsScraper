@@ -1,0 +1,74 @@
+   <style>
+      body {
+
+      }
+      #wrapper {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+      }
+      #articles h3 {
+        background-color: #4286f4;
+        color: white;
+        padding: 15px;
+        font: Times;
+        margin-top: 0;
+      }
+       #articles p {
+      padding: 10px;
+      font-size: 16px;
+       }
+      .article {
+        border: 1px solid black;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+  .image-body {
+        width: 60%;
+        margin: 0 auto; 
+      }
+
+      #my-nav {
+         background-color: #4286f4;
+         color: white;
+         height: 50px;
+
+      }
+  .navbar-default   .navbar-nav li a  {
+        color: white;
+      }
+#my-nav a {
+  color: white;
+}
+
+.not-saved {
+  float: right;
+
+}
+
+    </style>
